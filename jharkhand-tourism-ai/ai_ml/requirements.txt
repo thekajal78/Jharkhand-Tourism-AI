@@ -1,0 +1,33 @@
+# ── Core ML ────────────────────────────────────────────────────────────────
+torch==2.1.0                  # PyTorch — runs CLIP model
+torchvision==0.16.0           # Image transforms for CLIP preprocessing
+
+# ── CLIP ────────────────────────────────────────────────────────────────────
+openai-clip==1.0.1            # OpenAI CLIP model (ViT-B/32)
+Pillow==10.1.0                # Image loading and processing
+
+# ── Vector Search ───────────────────────────────────────────────────────────
+faiss-cpu==1.7.4              # Facebook AI Similarity Search (use faiss-gpu if GPU available)
+
+# ── Recommendation System ───────────────────────────────────────────────────
+scikit-learn==1.3.2           # Cosine similarity, collaborative filtering
+numpy==1.24.4                 # Matrix operations
+pandas==2.1.3                 # Data manipulation
+
+# ── NLP / Chatbot ───────────────────────────────────────────────────────────
+transformers==4.35.2          # HuggingFace: IndicTrans2, BERT, etc.
+sentencepiece==0.1.99         # Tokenizer for IndicTrans2
+sacremoses==0.1.1             # Text preprocessing for translation
+
+# ── Tribal Language Support ─────────────────────────────────────────────────
+# IndicTrans2 model is downloaded automatically via transformers
+# Model: ai4bharat/indictrans2-en-indic-dist-200M
+# Supports: Hindi, Santali, Ho, Mundari, Bengali + 22 more Indian languages
+
+# ── API Framework ───────────────────────────────────────────────────────────
+fastapi==0.104.1              # Web framework
+uvicorn==0.24.0               # ASGI server
+python-multipart==0.0.6       # File upload support
+
+# ── Caching ─────────────────────────────────────────────────────────────────
+redis==5.0.1                  # Cache CLIP embeddings (avoid re-computing)

@@ -1,0 +1,85 @@
+# FastAPI and ASGI server
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+gunicorn==21.2.0
+
+# Database
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+asyncpg==0.29.0
+
+# Authentication and Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+pydantic[email]==2.5.0
+
+# Caching and Session Management
+redis==5.0.1
+hiredis==2.2.3
+
+# AI/ML Integration
+openai==1.3.5
+transformers==4.36.2
+torch==2.1.1
+torchvision==0.16.1
+clip-by-openai==1.0
+sentence-transformers==2.2.2
+scikit-learn==1.3.2
+pandas==2.1.4
+numpy==1.24.4
+
+# Image Processing
+Pillow==10.1.0
+opencv-python==4.8.1.78
+
+# HTTP Clients
+httpx==0.25.2
+aiohttp==3.9.1
+requests==2.31.0
+
+# File Handling
+python-magic==0.4.27
+aiofiles==23.2.1
+
+# Background Tasks
+celery[redis]==5.3.4
+flower==2.0.1
+
+# Monitoring and Logging
+prometheus-client==0.19.0
+structlog==23.2.0
+
+# Utilities
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
+email-validator==2.1.0
+
+# Development and Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+factory-boy==3.3.0
+pytest-cov==4.1.0
+
+# Geospatial
+geopy==2.4.1
+shapely==2.0.2
+
+# Natural Language Processing
+spacy==3.7.2
+textblob==0.17.1
+langdetect==1.0.9
+
+# Time and Date
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Configuration
+pyyaml==6.0.1
+configparser==6.0.0
+
+# API Documentation
+mkdocs==1.5.3
+mkdocs-material==9.4.8
